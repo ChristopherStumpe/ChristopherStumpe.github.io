@@ -3,6 +3,13 @@
  *Condiionals and loops will interfere in this top down order of executions based on the conditions in those specific code blocks. We utilize
  *these to perform more complicated tasks while keeping our repeating code blocks to a minimum.
  *
+ * EDIT REQ: Must explain the syntax for conditional chains (keyword, where the conditions go, where the executed code goes, ELI5)
+ *Conditional Chains:
+ *The If initiates a chain. Afterwards in paranthesis you put the condition. If this evaluates to true the code in the curly braces immediately
+ *following the paranthesis executes. If false it jumps to the next keyword in chain. 
+ *This is either an else-if or an else or nothing. Else-if operates the same as an If just in the middle of the chain. Else is the final link in a chain.
+ *else does not have an evaluation, if the code made it to this point it executes.
+ *then it exits the chain.
  */
  
 //1. If //
@@ -42,6 +49,10 @@ if(myNum > 5) {
 //This switch statement is an alternative to the if code block, best used when you know the specific cases you're looking for.
 //Default: the default statement is used for when none of the cases match.
 //Break: it's important to utilize breaks so the code can clearly differentiate your cases.
+
+
+//EDIT REQ:- What does the keyword case mean? You defined break and default but not case
+//Case is referring to the parameter. i.e. in the 'case' of the color being 'blue' execute the following code block.
 
 var myVar = 'blue';
 var myOtherVar = 'red';

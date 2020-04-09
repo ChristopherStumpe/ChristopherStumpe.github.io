@@ -8,6 +8,30 @@
  *Concatination is the most recognizable of the operators that can be performed on strings. Simply using the + key to add two strings together.
  */
  
+ //EDIT REQ- What other operators manipulate strings? (+=)
+ //+= is another way to manipulate strings. It takes the previous value of the string, and concatinates the new input with the previous value and then 
+ //saves the new value
+ var myNewString = 'test'
+ myNewString += 'Example'
+ console.log(myNewString) //prints 'testExample'
+ 
+//EDIT REQ- .length is a property and not a method
+//Ah great catch! I should have realized that, one clue in particular is that it doesn't require () to initiate. Methods, being functions, require parenthesis.
+
+//EDIT REQ- Please include at least 6 string methods
+//So I have uppercase, lowercase, and split, I'll list 3 more
+//indexOf
+//lastIndexOf
+//search
+var str = "Example String Here"
+console.log(str.indexOf('S'))//prints 8
+//indexOf returns the first instance of the character 
+console.log(str.lastIndexOf('e'))//prints 18
+//lastIndexOf returns the last instance of the character
+console.log(str.search('String'))//prints 8
+//search returns the starting index of the string you're searching for
+ 
+ 
  //1. With Operators
  var myString = "Such String, Much Wow"
  var myOtherString = "Another String"

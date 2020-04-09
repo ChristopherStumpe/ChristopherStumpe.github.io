@@ -16,6 +16,11 @@
  console.log(myString); //=> prints This is my string. There are many like it, but this one is mine.
  //Strings are simply a series of characters. They can include quotes, but you can't use the same (single or double) quotes that are containing it.
  
+ //EDIT REQUESTED- How do we access individual characters in a string? Talk about their indices
+ //Each character in a string has an index, starting at zero. If you would like to access a character you can utilize bracket notation
+ myString[0] = 'M'
+ console.log(myString) //prints "Mhis is my string. There are many like it, but this one is mine."
+ 
  //3. Boolean //
  var myBoo = 7 == (3+4);
  console.log(myBoo); //=>prints true

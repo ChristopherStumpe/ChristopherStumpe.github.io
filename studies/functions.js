@@ -29,14 +29,29 @@
  //This wil invoke your named function.
 
  //4.How do we assign a function to a variable?
- var myVar = myFunction;
- //The above code will take our previous function and fill myVar with a reference to the function MyFunction
+ 
+ //EDIT REQ- Not how you assign a function to a variable, look up function expressions on MDN
+
+ const myConst = function (par) {
+  //codeblock
+ }
+ //This will assign the function to the variable myConst
 
  //5.Functions can OPTIONALLY take inputs, and OPTIONALLY return a single value. How do we specify inputs, and how do we specify outputs?
 //The inputs are specified upon invoking the function, you fill in arguments in the parameters stead. The output is the return and is specified upon declaring the function.
 
  //6.Scope: Functions can see and modify variables in parent or global scopes. The inverse is NOT true.
 //variables only hold references to functions, so in order to change the code block of a function you have to do it at the function's address itself.
+
+//EDIT REQ- Missing code example for scopes
+var dog = 'woof';
+function pet() {
+ var cat = 'meow'
+ console.log(dog) //prints woof
+ console.log(cat) //prints meow
+}
+console.log(dog) //prints woof
+console.log(cat) // reference error
 
  //7.Closures: Functions form closures around the data they house. If an object returned from the Function and is held in memory somewhere (referenced), that closure stays ALIVE, and data can continue to exist in these closures! (See: our meeting-room app for an example!) (ALSO, see: Understanding JavaScript Closures with Ease)
 //This is one of the first blocks to expanding our use of javascript. The key example discussed was how utilized this is in security of applications.

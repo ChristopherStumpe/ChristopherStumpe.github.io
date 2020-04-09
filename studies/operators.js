@@ -7,6 +7,16 @@
  
 //1. Assignment Operators //
 //Assignment operators assign values to variables
+
+//EDIT REQ- What other assignment operators do we have
+// we can also use the following assignment operators:
+//+=, -=, /=, *=, plus others.
+var example = 4
+example += 5
+console.log(example) //prints 9
+//These assignment operators take the value of the variable, and perform their math function using the following number to the current value of the
+//variable, then assign the result to the variable
+
 var a = 1; //we used the = sign assignment operator to give the variable a the value of 1
 //Assignment operators assign the value on the right to the variable on the left.
 //There are a few other assignment operatos as well; compound operators assign preset values. These are handy for loops
@@ -21,6 +31,10 @@ a * 3; //This arithmetic operator multiplies a times 3.
 //Comparison operators are used to generate a value of true or false. They're especially beneficial in control flow statements
 //==, ===, <, <=, >, >=, !=, !== are all examples of comparison operators
 console.log(1 == 2); //=> prints false
+
+
+//EDIT REQ- What is the difference between the loose and strict comparison operators (== vs ===)
+//loose (==) evaluates value but disregards type, while strict (===) evaluates type and value. Default to strict unless you have good reason not to.
 
 //4. Logical operators //
 //Logical operators such as &&, ||, and ! are useful for control flow statements. 
