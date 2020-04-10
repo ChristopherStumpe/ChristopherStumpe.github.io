@@ -2,40 +2,125 @@
 // range ///////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function range() {
-
+function range(start, end, step = 1) {
+//Write a range function that takes two arguments, start and end, and returns an array containing all the numbers from start up to (and including) end.
+  //I-start and end numbers (step, set to default to 1)
+  //O- return array, inclusive
+  //C-
+  //E-return empty array if start === end
+  //make our output array
+  let output = []; 
+  //Empty exception if start ===end
+  if(start === end) {
+    return output;
+  }
+   //Loop seems like a good starting point
+  if(step > 0) {
+     for (let i = start; i <= end; i =i+ step) {
+        output.push(i);
+     }
+  } else {
+     for (let i = start; i >= end; i =i+ step) {
+       output.push(i);
+     }
+  }
+  return output;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // sum /////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function sum() {
-
+function sum(array) {
+  //Next, write a sum function that takes an array of numbers and returns the sum of these numbers. Run the example program and see whether it does indeed return 55.
+  //I-array of numbers
+  //O-sum of this array
+  //C-
+  //E-
+  //need a dropbox
+  let sum =0;
+  //loop this up 
+  for (let i = 0; i < array.length; i++) {
+    sum+=array[i];
+  }
+  return sum;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // reverseArray ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function reverseArray() {
-
+function reverseArray(array) {
+  //I-array
+  //o- reverse that array and return as new array
+  //C-
+  //E-
+  //The first, reverseArray, takes an array as argument and produces a new array that has the same elements in the inverse order. 
+  let newArray = [];
+  for (let i = array.length-1; i >= 0; i --) {
+    newArray.push(array[i]);
+  }
+  return newArray;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // reverseArrayInPlace /////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function reverseArrayInPlace() {
-
+function reverseArrayInPlace(array) {
+  //The second, reverseArrayInPlace, does what the reverse method does: it modifies the array given as argument by reversing its elements.
+  //I-array
+  //o-same array, reversed
+  //C-
+  //E-
+  //I plan to use a loop to loop over half of the array I think
+  //I'll swap front and back as I go so I don't delete elements I'll need
+  let tempFront;
+  let tempBack;
+  for(let i = 0; i < Math.floor(array.length/2); i++) {
+    tempFront = array[i];
+    tempBack = array[array.length-1-i];
+    array[i] = tempBack;
+    array[array.length-1-i] = tempFront;
+  }
+  return array;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // arrayToList /////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function arrayToList() {
+function arrayToList(array) {
+  //Write a function arrayToList that builds up a list structure like the one shown when given [1, 2, 3] as argument.
+  //I-array
+  //O-list
+  //C-
+  //E-
 
+//   let list = {
+//   value: 1,
+//   rest: {
+//     value: 2,
+//     rest: {
+//       value: 3,
+//       rest: null
+//     }
+//   }
+// };
+  //I'll need to loop through the array.
+  //Will i need a constructor function to build the objects?
+  let list = {};
+  let x
+  for (let i = array.length-1; i >= 0; i--) {
+    //add object to list
+    //list = {value: X, rest: list}
+    
+    //So to begin, make an object
+    //value is array[i] and rest: null
+    //Then need to make that whole thing an object to add to the next object 
+    //assign the rest value and assign value array[i]
+    
+  }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -43,7 +128,10 @@ function arrayToList() {
 ////////////////////////////////////////////////////////////////////////////////
 
 function listToArray() {
-
+  //I-
+  //o-
+  //C-
+  //E-
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -51,7 +139,10 @@ function listToArray() {
 ////////////////////////////////////////////////////////////////////////////////
 
 function prepend() {
-
+  //I-
+  //o-
+  //C-
+  //E-
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -59,7 +150,10 @@ function prepend() {
 ////////////////////////////////////////////////////////////////////////////////
 
 function nth() {
-
+  //I-
+  //o-
+  //C-
+  //E-
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -67,7 +161,10 @@ function nth() {
 ////////////////////////////////////////////////////////////////////////////////
 
 function deepEqual() {
-
+  //I-
+  //o-
+  //C-
+  //E-
 }
 
 ////////////////////////////////////////////////////////////////////////////////
