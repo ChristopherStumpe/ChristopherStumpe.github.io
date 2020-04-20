@@ -16,6 +16,19 @@
  console.log(myString); //=> prints This is my string. There are many like it, but this one is mine.
  //Strings are simply a series of characters. They can include quotes, but you can't use the same (single or double) quotes that are containing it.
  
+ //EDIT REQ2
+ //Accessing characters within strings. You can access an individual character by referencing its index. 
+ //For example
+ let exampleString = "This is an example" 
+ console.log(exampleString[1]) //=> prints h
+ 
+ //EDIT REQ2
+ //Strings are immutable. The example below is faulty. If i wanted to change my example from above I would need to create a new string.
+ //Here is how I would approach this.
+ let newString = exampleString + '!'
+ console.log(newString) //'This is an example!'
+ 
+ 
  //EDIT REQUESTED- How do we access individual characters in a string? Talk about their indices
  //Each character in a string has an index, starting at zero. If you would like to access a character you can utilize bracket notation
  myString[0] = 'M'
